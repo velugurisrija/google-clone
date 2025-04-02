@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+    <title>Google clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: url(onepiece.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .center {
+            width: 550px;
+            height: 300px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        i {
+            columns: black;
+            font-size: 20px;
+            
+        }
+
+        .inp-grp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: white;
+            border-radius: 25px;
+            width: 80%;
+
+        }
+
+        .text-field {
+            font: 30px;
+            outline: none;
+            border: none;
+            width: 300px;
+            height: 50px;
+            padding: 5px;
+        }
+
+        .fav-card {
+            width: 120px;
+            height: 120px;
+            color: white;
+            background-color: transparent;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+        .fav-card:hover{
+            background-color: rgba(250, 246, 244, 0.183);
+            .dots{
+                 opacity: 1;
+            }
+            }
+        
+
+        .circle {
+            width: 40%;
+            height: 40%;
+            background-color: transparent;
+            border-radius: 50%;
+            margin-bottom:5px ;
+
+        }
+
+        .insta {
+            width: 100%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fav-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .dots{
+             font-size: 20px;
+             position: relative;
+             left: 50px;
+             color: rgb(19, 17, 17);
+             opacity: 0;
+             transition: 1s all ease;  
+        }
+    .top-right{
+        width: 250px;
+        height: 30px;
+        background-color:transparent;
+        position:fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: right;
+        color: rgb(24, 22, 22);
+    
+
+    }
+    .dotts{
+        display: flex;
+        color: rgb(17, 15, 15);
+    }
+    .na{
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <img src="google.png" alt="" width="40%" style="margin-bottom: 30px">
+
+            <div class="inp-grp">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="https://google.com/search">
+                    <input type="text" class="text-field" placeholder="Search Google or a Type of URL" name="q">
+                </form>
+                <i class="fa-duotone fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="fav-list">
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="insta.png" alt="" class="insta" >
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="chatgpt.png" alt="" class="insta">
+                    </div>
+                    <p>ChatGpt</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="yt.png" alt="" class="insta">
+                    </div>
+                    <p>Webstore</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="facebook.png" alt="" class="insta">
+                    </div>
+                    <p>AddShortCuts</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="top-right">
+        <p>Gmail</p>
+        <p>Images</p>
+        <div class="dotts">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    <img src="prabhas.png" alt="" class="na">
+    </div>
+</body>
+
+</html>
